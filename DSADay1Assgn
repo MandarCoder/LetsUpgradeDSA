@@ -1,0 +1,21 @@
+a = 1
+b = 1
+while(b <= n)
+{
+    a += 1;
+    b += a;
+    printf("Hi LetsUpgraders");
+}
+The code will run from 1 to n while skipping some numbers
+in between .
+The print statement will execute for iterations where b has values
+b = 1,3,6,10 ,.... till n.
+Lets say the time complexity is T(k)
+The iteration will skip some iteration values like 2,4,5,7,8,9,..
+So here k will be n-c where c is no. Of iteration values skipped
+
+So T(k)=T(n-c)
+
+Here constant c will be ignored
+
+So time complexity will be T(n)
